@@ -1,5 +1,5 @@
-var port = "8001";
-var host = "0.0.0.0";
+var port = process.env.PORT || "8001";
+var host = process.env.HOST || "0.0.0.0";
 var Express = require('express');
 
 var app = Express();
